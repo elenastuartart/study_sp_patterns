@@ -8,19 +8,7 @@ import com.stuart.Prototype.lab1_prototype.Point;
 public class ProgramBuilder {
     public static void main(String[] args) {
 
-        TestSceneBuilder sceneBuilder = new TestSceneBuilder();
-        SizeMemoryBuilder sizeMemoryBuilder = new SizeMemoryBuilder();
-
-        Director director = new Director();
-        director.setBuilder(sceneBuilder);
-        director.make();
-
-        Scene scene = sceneBuilder.getScene();
-        System.out.println(scene.toString());
-
-        director.setBuilder(sizeMemoryBuilder);
-    director.make();
-        int sum = sizeMemoryBuilder.getResult();
-        System.out.println(sum);
+        FasadeBuilder fb = new FasadeBuilder();
+        fb.initBuilder();
     }
 }

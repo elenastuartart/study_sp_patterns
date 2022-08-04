@@ -4,4 +4,6 @@ public abstract class GraphObject implements Cloneable {
 
     @Override
     public abstract GraphObject clone();
+
+
 }

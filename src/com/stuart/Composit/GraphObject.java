@@ -1,6 +1,6 @@
 package com.stuart.Composit;
 
-public interface GraphObjectComponent {
+public interface GraphObject {
 
     void draw();
 

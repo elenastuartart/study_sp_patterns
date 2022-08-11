@@ -1,6 +1,6 @@
 package com.stuart.Composit;
 
-public class Line extends SimpleShape implements GraphObjectComponent {
+public class Line extends SimpleShape implements GraphObject {
 
 //    int x1, y1, x2, y2;
 
@@ -17,7 +17,7 @@ public class Line extends SimpleShape implements GraphObjectComponent {
 
     @Override
     public void draw() {
-
+        System.out.println("Лист линия");
     }
 
 

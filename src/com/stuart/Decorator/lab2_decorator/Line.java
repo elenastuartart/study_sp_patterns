@@ -1,9 +1,8 @@
 package com.stuart.Decorator.lab2_decorator;
 
-import com.stuart.Composit.GraphObjectComponent;
-import com.stuart.Composit.SimpleShape;
+import com.stuart.Composit.GraphObject;
 
-public class Line  implements GraphObjectComponent {
+public class Line  implements GraphObject {
 
 //    int x1, y1, x2, y2;
 

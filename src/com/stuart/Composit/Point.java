@@ -1,6 +1,6 @@
 package com.stuart.Composit;
 
-public class Point extends SimpleShape implements GraphObjectComponent {
+public class Point extends SimpleShape implements GraphObject {
 
     public Coords x;
     public String color;
@@ -13,7 +13,7 @@ public class Point extends SimpleShape implements GraphObjectComponent {
 
     @Override
     public void draw() {
-        System.out.printf("Создана точка с координатами (%d, %d) %n ", x.x, x.y);
+        System.out.println("Лист точка");;
     }
 
 

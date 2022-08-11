@@ -3,27 +3,28 @@ package com.stuart.Composit;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompositeShape implements GraphObjectComponent {
+public class CompositeShape implements GraphObject {
 
-    public List<GraphObjectComponent> components = new ArrayList<>();
-    public int width = 50;
-    public int heigth = 10;
-
+    public List<GraphObject> components = new ArrayList<>();
 
     public final String type = "composite";
+
+    boolean flag = false;
 
     public CompositeShape() {
     }
 
     @Override
     public void draw() {
-        System.out.println("---------Контейнер с фигурами-------");
-        System.out.println();
+
+        for (int i = 0; i < components.size(); i++) {
+            components.get(i).draw();
+        }
     }
 
-    public void add(GraphObjectComponent shape) {
+    public void add(GraphObject shape) {
         components.add(shape);
-        System.out.printf("----Добавлено: ");
+
     }
 
     @Override

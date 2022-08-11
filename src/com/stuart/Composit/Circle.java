@@ -1,6 +1,6 @@
 package com.stuart.Composit;
 
-public class Circle extends SimpleShape implements GraphObjectComponent {
+public class Circle extends SimpleShape implements GraphObject {
 
     public Coords center;
     public String color;
@@ -17,7 +17,7 @@ public class Circle extends SimpleShape implements GraphObjectComponent {
 
     @Override
     public void draw() {
-        System.out.printf("Создан круг с координатами (%d, %d) %n", center.x, center.y);
+        System.out.println("Лист круг");
     }
 
 
